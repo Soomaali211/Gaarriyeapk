@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="so" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Note Live ee falanqeeyaha miisaanka maansada Soomaaliyeed.">
+<meta name="gaarriye-api" content="">
+<title>Miisaanka Maansada Gaarriye — Note Live</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="mobile-overlay" id="overlay"></div>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Hagaha">
+  <div class="brand"><div class="logo">G</div><div><strong>Miisaanka Maansada</strong><small>Nidaamka Gaarriye</small></div></div>
+  <div class="nav-label">Qaybaha</div>
+  <nav class="nav">
+    <button class="active" data-page="analyzer"><span class="ico">✍</span> Falanqaynta maansada</button>
+    <button data-page="genres"><span class="ico">▤</span> Noocyada iyo godadka</button>
+    <button data-page="sources"><span class="ico">◫</span> Ilaha cilmiyeed</button>
+  </nav>
+  <div class="side-note">Nidaam ku dhisan xeerarka asalka ah ee Gaarriye iyo fasiraadaha cilmi-baadhayaasha. Xeer aan la xaqiijin looma adeegsanayo go'aan rasmi ah.</div>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <div class="top-title">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Fur menu">☰</button>
+    <div><h1>Falanqeeyaha Miisaanka Maansada</h1><p>Gaarriye-first · Xeerar, caddeymo iyo fasiraad cilmiyeed</p></div>
+  </div>
+  <div class="actions"><button class="icon-btn" id="themeBtn" aria-label="Beddel muuqaalka" title="Beddel muuqaalka">◐</button></div>
+</header>
+
+<section class="page active" id="page-analyzer">
+  <div class="intro">
+    <div><div class="eyebrow">Falanqaynta</div><h2>Note Live — qor oo la soco</h2><p>Ku qor maansadaada; sadarradu waxay si toos ah uga muuqanayaan liiska Note Live. Nidaamka falanqaynta rasmiga ahi wuxuu adeegsan doonaa xeerarka Gaarriye ee la xaqiijiyey, wuxuuna muujin doonaa caddeynta iyo meelaha mugdigu ka jiro.</p></div>
+    <span class="pill blue">Note Live · falanqayn toos ah</span>
+  </div>
+  <div class="analyzer-grid">
+    <div class="card">
+      <h2>Note Live</h2>
+      <section class="analysis-modes" aria-labelledby="analysisModesTitle">
+        <h3 class="analysis-modes-title" id="analysisModesTitle">Habka falanqaynta</h3>
+        <div class="mode-switches">
+          <label class="mode-option"><span>Gaarriye</span><span class="switch"><input type="checkbox" id="modeGaarriye" checked><span class="switch-track"></span></span><span class="mode-state" id="stateGaarriye">ON</span></label>
+          <label class="mode-option"><span>Cilmi-baadhisaha</span><span class="switch"><input type="checkbox" id="modeResearch"><span class="switch-track"></span></span><span class="mode-state" id="stateResearch">OFF</span></label>
+          <label class="mode-option"><span>Xeerarka kale ee waafaqsan</span><span class="switch"><input type="checkbox" id="modeCompatible"><span class="switch-track"></span></span><span class="mode-state" id="stateCompatible">OFF</span></label>
+        </div>
+        <div class="helper" id="modeHelp">Dooro qaybaha xeerarka aad rabto in lagu baaro maansada.</div>
+      </section>
+      <div class="field-label"><label for="poem" style="margin:0">Qoraalka maansada</label><span class="muted" id="charCount">0 xaraf</span></div>
+      <div class="editor-wrap">
+        <div class="editor-gutter" id="editorGutter" aria-hidden="true">1</div>
+        <textarea id="poem" spellcheck="false" wrap="off" aria-label="Qoraalka maansada" placeholder="Halkan ku qor maansadaada…&#10;&#10;Sadar kasta geli khad gooni ah."></textarea>
+      </div>
+      <div class="selected-line" id="selectedLine" aria-live="polite">Sadar hadda: 1 — diyaar u ah qorista</div>
+      <div class="live-head"><strong>La socodka sadarrada</strong><span class="pill" id="liveCount">0 sadar</span></div>
+      <div id="liveLines" class="live-lines" aria-live="polite"><div class="live-empty">Marka aad wax qorto, sadarradu halkan ayay ka soo muuqanayaan.</div></div>
+      <div class="controls">
+        <select class="select-like" id="genreSelect" aria-label="Nooca maansada">
+          <option value="auto">Nidaamku ha soo jeediyo nooca</option>
+          <option value="jiifto">Jiifto</option><option value="gabay">Gabay</option><option value="guurow">Guurow</option><option value="geeraar">Geeraar</option>
+          <option value="heesta_kabadaha">Heesta Kabadaha</option><option value="heesta_xerta">Heesta Xerta</option>
+          <option value="baarcaddaha_saarka">Baarcaddaha / Saarka</option><option value="heesta_carruurta">Heesta Carruurta</option>
+          <option value="herimaahee_hanna_haybsan">Herimaahee Hanna Haybsan</option>
+        </select>
+        <button class="btn primary" id="analyzeBtn">Falanqee maansada →</button>
+        <button class="btn ghost" id="saveBtn" type="button">Kaydi</button>
+        <button class="btn ghost" id="downloadBtn" type="button">Soo dejiso .txt</button>
+        <button class="btn ghost" id="clearBtn" type="button">Nadiifi</button>
+      </div>
+      <div class="helper">Qoraalka waxaa lagu kaydin karaa qalabkaaga.  Nooca maansada waad dooran kartaa ama waxaad u dayn kartaa nidaamka. Falanqaynta miisaanka rasmiga ahi waxay sugaysaa engine la xaqiijiyey.</div>
+    </div>
+    <div class="card">
+      <h2>Faahfaahinta falanqaynta</h2>
+      <div class="result-placeholder" id="resultBox">
+        <div class="result-icon">⌁</div>
+        <h3>Qoraalku weli ma falanqaysna</h3>
+        <p>Note Live wuxuu la socdaa qoraalka. Miisaanka kama bixinayo go’aan ilaa engine-ka xeerarka la xaqiijiyey la hawlgeliyo.</p>
+        <div class="status-row"><span class="pill" id="apiStatus">API: hubinaya…</span><span class="pill">Engine: sugaya xaqiijin</span></div>
+      </div>
+      <div class="notice"><strong>Ogow — xaaladda nidaamka</strong> Nuqulkan frontend-ku wuxuu bixiyaa qorista tooska ah iyo xulashada saddexda qaybood. Laakiin engine-ka xeerarka Gaarriye lama hawlgelin ilaa xeerarka iyo jaantusyadu si buuxda u xaqiijismaan; sidaas darteed backend-ku ma samaynayo miisaan been-abuur ah.</div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="page-genres">
+  <div class="intro"><div><div class="eyebrow">Barashada miisaanka</div><h2>Noocyada maansada iyo godadkooda</h2><p>Qaybtani waxay noqon doontaa hagaha kooban ee nooc kasta: qaab-dhismeedkiisa, godkiisa, xeerarkiisa iyo tusaalooyin laga soo xigtay ilaha la xaqiijiyey.</p></div><span class="pill">9 nooc oo diiwaanka ku jira</span></div>
+  <div class="grid2" id="genreGrid">
+    <article class="card genre-card"><div class="genre-top"><h3>Jiifto</h3><span class="pill">God</span></div><p>Qaab-dhismeedka sagaalley iyo tobanley, xundhurta, isku-xidhka iyo kaalinta shibbanayaasha.</p><div class="small-status">Faahfaahinta xeerarka: sugaysa xaqiijinta jaantusyada</div></article>
+    <article class="card genre-card"><div class="genre-top"><h3>Gabay</h3><span class="pill">God</span></div><p>Laba xubnood, qaab-dhismeedka 20/21 unug iyo ka-reebitaanka toddobaaleey.</p><div class="small-status">Faahfaahinta qaabka: qayb ahaan la diiwaangeliyey</div></article>
+    <article class="card genre-card">
+  <div class="genre-top">
+    <h3>Guurow</h3>
+    <span class="pill">God</span>
+  </div>
+  <p>Gabayga ayuu la wadaagaa qaab-dhismeedka miisaanka, balse wuxuu leeyahay luuq u gaar ah.</p>
+  <div class="small-status">Xeerarka: sugaya xaqiijinta iyo diiwaangelinta caddeymaha</div>
+    </article>
+    <article class="card genre-card"><div class="genre-top"><h3>Geeraar</h3><span class="pill">God</span></div><p>Qaabka dhexe ee la aqoonsaday iyo kala duwanaanshaha bilowga iyo dhammaadka.</p><div class="small-status">Faahfaahinta jaantuska: sugaysa dib-u-eegis</div></article>
+    <article class="card genre-card"><div class="genre-top"><h3>Heesta Kabadaha</h3><span class="pill">Hees</span></div><p>Saddex xubnood iyo xidhiidhka tirada unugyada ee xubnaha.</p><div class="small-status">Dib-u-eegis tusaalooyin iyo jaantus ayaa loo baahan yahay</div></article>
+    <article class="card genre-card"><div class="genre-top"><h3>Heesta Xerta</h3><span class="pill">Hees</span></div><p>Qaab-dhismeedka heesta iyo xidhiidhka Baarcaddaha/Saarka.</p><div class="small-status">Jaantuska oo dhan weli lama xaqiijin</div></article>
+    <article class="card genre-card"><div class="genre-top"><h3>Baarcaddaha / Saarka</h3><span class="pill">Qayb hees</span></div><p>Qaybta hore ee qaabka Heesta Xerta sida lagu tilmaamay ilaha.</p><div class="small-status">Xeer gooni ah oo dhammaystiran weli lama ansixin</div></article>
+    <article class="card genre-card"><div class="genre-top"><h3>Heesta Carruurta</h3><span class="pill">Hees</span></div><p>Nooc gaar ah oo Gaarriye ka hadlay; lama mid aha qaabka Dhaanto/Balwa.</p><div class="small-status">Jaantuska hordhaca ah weli waa UNVERIFIED</div></article>
+    <article class="card genre-card"><div class="genre-top"><h3>Herimaahee Hanna Haybsan</h3><span class="pill">God</span></div><p>Qaab leh bilow, xundhur iyo kala-doorashooyin dhammaad.</p><div class="small-status">Jaantuska iyo tusaalooyinka waxay u baahan yihiin dib-u-eegis</div></article>
+  </div>
+  <div class="notice learning-callout"><strong>Sida loo akhriyo heerarka</strong> “La diiwaangeliyey” macnaheedu ma aha in xeerka oo dhan la xaqiijiyey. Qaab kasta oo aan caddeyn buuxda lahayn wuxuu ahaanayaa mid aan la ansixin, mana shaqaynayo habka xaqiijinta rasmiga ah.</div>
+</section>
+
+<section class="page" id="page-sources">
+  <div class="intro"><div><div class="eyebrow">Tixraacyada</div><h2>Ilaha iyo cilmi-baadhisyada</h2><p>Ilaha asalka ah ee Gaarriye iyo cilmi-baadhisyada kale si kala gaar ah ayaa loo diiwaangelinayaa. Cilmi-baadhis kale si toos ah uguma beddeli karto xeer Gaarriye.</p></div><span class="pill blue">Source registry</span></div>
+  <div class="grid2">
+    <div class="card">
+      <h2>Ilaha aasaasiga ah</h2>
+      <p class="muted" style="font-size:12px;margin:0 0 13px">Kuwani ayaa saldhig u noqonaya xaqiijinta xeerarka Gaarriye.</p>
+      <div class="source-list">
+        <div class="source-item"><div class="source-mark">G</div><div><strong>Gaarriye — Mahadho</strong><small>Qoraallada miisaanka, jaantusyada iyo tusaalooyinka; bogagga caddeynta waa in si toos ah loo hubiyaa.</small></div></div>
+        <div class="source-item"><div class="source-mark">G</div><div><strong>Gaarriye — qoraalladii 1976</strong><small>Dib-u-daabacaadda qoraallada Xiddigta Oktoobar; facsimile-ga asalka ah waa in la kala saaraa.</small></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Cilmi-baadhisyo iyo falanqayn</h2>
+      <p class="muted" style="font-size:12px;margin:0 0 13px">Waxaa loo adeegsanayaa isbarbardhig, fasiraad iyo dib-u-eegis cilmiyeed.</p>
+      <div class="source-list">
+        <div class="source-item"><div class="source-mark">O</div><div><strong>Martin Orwin — On Consonants in Somali Metrics</strong><small>Doorka shibbanayaasha ee miisaanka.</small></div></div>
+        <div class="source-item"><div class="source-mark">O</div><div><strong>Martin Orwin — A Moraic Model of the Prosodic Phonology of Somali</strong><small>Qaabka mora iyo habdhiska dhawaaqa Soomaaliga.</small></div></div>
+        <div class="source-item"><div class="source-mark">J</div><div><strong>J. W. Johnson — Recent Researches into the Scansion of Somali Oral Poetry</strong><small>Daraasado ku saabsan miisaamidda maansada afka.</small></div></div>
+        <div class="source-item"><div class="source-mark">A</div><div><strong>Afrah — Daraasadda prosody-ga Soomaaliga</strong><small>Falanqayn tiro-koob iyo qaababka prosodic.</small></div></div>
+        <div class="source-item"><div class="source-mark">K</div><div><strong>Khoolli — Doodda iyo naqdin ku saabsan miisaanka</strong><small>Aragti naqdin ah; ma aha xeer Gaarriye oo la ansixiyey.</small></div></div>
+        <div class="source-item"><div class="source-mark">S</div><div><strong>Somali Prosodic Systems</strong><small>Il cilmiyeed isbarbardhig ah; xogta qoraaga iyo daabacaadda waa la xaqiijin doonaa.</small></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="notice learning-callout"><strong>Mabda'a kala-soocidda</strong> Xeer kasta wuxuu yeelanayaa tixraac iyo bog caddeyn. Aragti cilmi-baare waxaa lagu kaydinayaa research registry, xeer Gaarriye-na rule registry. Haddii ay is khilaafaan, khilaafka waa la diiwaangelinayaa; midna si qarsoodi ah looguma beddelayo kan kale.</div>
+</section>
+
+<p class="footer-note">Nooca frontend-ka: naqshad iyo is-dhexgal. Nuqulka frontend-ka. Miisaanka lama qiyaasayo; xeer aan la xaqiijin ma bixiyo go’aan rasmi ah.</p>
+</main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
+                                                                                         </html>
+                                                                                         

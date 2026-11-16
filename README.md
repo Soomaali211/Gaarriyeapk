@@ -1,11 +1,39 @@
-<div align="center">
+# Gaarriye Somali Poetry Meter Analyzer
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Nidaam lagu falanqeeyo miisaanka maansada Soomaaliyeed
+iyadoo lagu salaynayo xeerarka Gaarriye.
 
-  <h1>Built with AI Studio</h2>
+## Project Structure
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- frontend/ — User interface
+- backend/ — FastAPI application
+- backend/app/ — API and application logic
+- backend/tests/ — Automated tests
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Technology
 
-</div>
+- HTML, CSS and JavaScript
+- Python
+- FastAPI
+- PostgreSQL (planned)
+
+## Current Status
+
+The frontend and backend starter structure
+are under development.
+
+The verified Gaarriye metrical analysis engine
+has not yet been implemented.
+
+Unverified rules must not be used to produce
+strict analysis results.
+
+## Main Principle
+
+The system must preserve Gaarriye's original
+metrical framework and distinguish verified
+rules from research proposals.
+
+## Correct Genre Name
+
+Heesta Carruurta

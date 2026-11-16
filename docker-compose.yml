@@ -1,0 +1,38 @@
+
+services:
+  database:
+    image: postgres:16
+    container_name: gaarriye_database
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: gaarriye_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-development_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d gaarriye_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: gaarriye_backend
+    restart: unless-stopped
+    environment:
+      APP_ENV: development
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-development_password}@database:5432/gaarriye_db
+    ports:
+      - "8000:8000"
+    depends_on:
+      database:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  

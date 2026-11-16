@@ -1,0 +1,1 @@
+rule_id,rule_code,rule_class,genre_id,title,description,metrical_pattern,conditions,exceptions,source_id,printed_page,digital_page,diagram_id,quotation,evidence_path,interpretation,status,positive_test_ids,negative_test_ids,ambiguous_test_ids,reviewer,review_date,version,notes
