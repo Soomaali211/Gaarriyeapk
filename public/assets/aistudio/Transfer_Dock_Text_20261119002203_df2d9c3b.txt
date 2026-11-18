@@ -1,0 +1,96 @@
+MASTER COMMAND: INTEGRATE GAARRIYE METER ENGINE WITH EXISTING FRONTEND AND API
+
+The existing frontend is already built. I have also provided the authoritative Gaarriye meter rules, compatible research rules, and calculation specifications.
+
+Your task is to integrate these materials into the EXISTING SYSTEM and build a fully functional Somali poetry meter analysis engine connected to a working backend API.
+
+1. PRESERVE THE EXISTING SYSTEM
+
+- Inspect the entire existing project before making changes.
+- Preserve the existing frontend, design, pages, components, navigation, features, and user experience.
+- Do not rebuild or replace the frontend.
+- Do not delete existing functionality.
+- Do not modify, reinterpret, simplify, or invent any supplied meter rules or calculation methods.
+- Treat the supplied ZIP and Master Prompt as the authoritative rule specifications.
+
+2. BUILD THE REAL METER ANALYSIS ENGINE
+
+Implement the actual calculation engine using the supplied rules.
+
+The engine must:
+
+- Process Somali poetry line by line.
+- Apply the supplied phonological and metrical calculations.
+- Identify syllabic/metrical units according to the supplied specifications.
+- Analyze poem structure and relevant meter patterns.
+- Compare calculated results against the applicable verified meter patterns.
+- Identify matching, non-conforming, ambiguous and unverified results.
+- Return detailed explanations showing how each calculation was performed.
+- Preserve the distinction between Gaarriye's rules and compatible researchers' rules.
+
+Do not return simulated, hardcoded, random or fabricated analysis results.
+
+3. CONNECT THE FRONTEND TO THE BACKEND API
+
+Create or complete a real backend API and connect it to the existing frontend.
+
+Implement:
+
+- A documented analysis endpoint.
+- Request validation.
+- Analysis-mode selection.
+- Structured JSON responses.
+- Error handling.
+- API connection and timeout handling.
+- Loading, success and failure states in the existing frontend.
+- Line-by-line analysis results.
+- Detailed calculation breakdown.
+- Source and rule provenance for every result.
+
+The API must execute the actual meter engine, not return placeholder responses.
+
+4. ANALYSIS MODES
+
+Provide three independent modes:
+
+1. Gaarriye rules.
+2. Compatible research rules.
+3. Both selected independently or together.
+
+Never merge their sources or falsely attribute one category to another. If no mode is selected, ask the user to enable at least one.
+
+5. TESTING AND VALIDATION
+
+Create comprehensive tests for:
+
+- Every verified rule.
+- Every supplied worked example.
+- Positive and negative examples.
+- Ambiguous cases.
+- Different poem genres.
+- API endpoints.
+- Frontend/backend integration.
+- Invalid input and error handling.
+- Preservation of existing functionality.
+
+Compare the engine's outputs against the supplied expected calculations. Never mark an unverified rule as verified.
+
+6. COMPLETION REQUIREMENTS
+
+Before declaring completion:
+
+- Run all available tests.
+- Fix all discovered errors.
+- Verify that the frontend communicates with the real API.
+- Verify that real poem submissions reach the engine and return calculated results.
+- Document all API endpoints and configuration.
+- Provide exact changed/new file paths.
+- Provide deployment and GitHub integration instructions.
+
+ABSOLUTE RESTRICTION
+
+Do not redesign the application, replace its frontend, change the supplied meter rules, invent calculations, or claim successful integration without testing.
+
+If a required rule or calculation is insufficiently documented, report the gap and keep that case AMBIGUOUS or UNVERIFIED.
+
+The final deliverable must be the existing application with a genuinely working, tested, API-connected Gaarriye meter analysis engine.

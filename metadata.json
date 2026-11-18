@@ -1,0 +1,8 @@
+{
+  "name": "Miisaanka Maansada Gaarriye",
+  "description": "Note Live ee falanqeeyaha miisaanka maansada Soomaaliyeed iyadoo lagu salaynayo xeerarka asalka ah ee Gaarriye.",
+  "request_or_command": "Miisaanka Maansada Gaarriye Note Live",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,201 @@
+MASTER PROMPT: COMPLETE GAARRIYE SYSTEM AUDIT, TESTING & VALIDATION
+
+UJEEDDO
+
+Samee baaritaan farsamo oo dhammaystiran (Full System Audit) dhammaan mashruuca Gaarriye. Hubi in nidaamku si dhab ah u shaqaynayo, dhammaan qaybihiisuna isku xiran yihiin, khaladaadkana sax.
+
+SHARDIGA UGU MUHIIMSAN: Xeerarka Miisaanka Gaarriye iyo habka Xisaabinta ee aan ku siiyey waa 100% immutable (aan wax laga beddeli karin).
+
+1. ILAALINTA XEERARKA IYO XISAABINTA
+
+- Ilaali dhammaan xeerarka, qaacidooyinka, tirooyinka, jaantusyada, tusaalooyinka iyo habraacyada xisaabinta sida saxda ah ee asalka ah.
+- Waxba ha tirtirin, ha beddelin, ha soo koobinin, hana dib u fasirin.
+- Ha ku darin xeerar, qaacidooyin ama tirooyin cusub.
+- Ha isku darin xeerarka Gaarriye iyo cilmi-baadhista waafaqsan.
+- Ilaali aqoonsiga, asalka iyo caddaynta xeer kasta.
+- Samee SHA-256 checksum iyo isbarbardhig ka hor iyo ka dib audit-ka si loo xaqiijiyo inaan waxba isbeddelin.
+- Haddii xeerku mugdi ku jiro, u calaamadee AMBIGUOUS ama UNVERIFIED; ha qiyaasin.
+- Haddii hagaajinta koodhku u baahan tahay beddel xeer, istaag oo soo sheeg.
+
+2. FULL FRONTEND AUDIT
+
+Baar dhammaan:
+
+- HTML, CSS iyo JavaScript.
+- Bogagga, menus-ka, navigation-ka iyo links-ka.
+- Buttons, forms, inputs iyo switches.
+- Note Live iyo line-by-line editing.
+- Autosave, local storage iyo kaydinta maansada.
+- Responsive design iyo mobile compatibility.
+- Loading, success, empty iyo error states.
+- Console errors iyo JavaScript exceptions.
+
+Hubi in dhammaan qaybaha muuqda ay shaqaynayaan, ee aanay ahayn muuqaal keliya.
+
+3. BACKEND & API AUDIT
+
+Baar:
+
+- Backend server iyo startup.
+- API routes iyo HTTP methods.
+- Request/response schemas.
+- Input validation.
+- CORS iyo frontend/API communication.
+- Error handling iyo logging.
+- Timeouts iyo connection failures.
+- Environment variables iyo configuration.
+- Authentication/security haddii nidaamku leeyahay.
+- API documentation.
+
+Dir codsiyo tijaabo ah API-ga, xaqiiji jawaabaha iyo HTTP status codes, hana ku ekaan in routes-ku jiraan.
+
+4. METER ENGINE AUDIT
+
+Hubi in Engine-ku dhab ahaan fulinayo xisaabinta miisaanka, kuna shaqaynayo xeerarka la bixiyey.
+
+Tijaabi:
+
+- Kala saaridda meerisyada iyo baydyada.
+- Falanqaynta sadar kasta.
+- Habka aqoonsiga dhawaaqyada iyo unugyada miisaanka ee xeerarku qeexeen.
+- Xisaabinta tirooyinka iyo qaybaha.
+- Isbarbardhigga qaababka miisaanka.
+- Natiijooyinka iyo sharaxaadda tallaabo kasta.
+- Xeerarka Gaarriye iyo cilmi-baadhista waafaqsan oo kala madax-bannaan.
+- Natiijooyinka VERIFIED, NON_CONFORMING, AMBIGUOUS iyo UNVERIFIED.
+
+Ha adeegsan hardcoded results, random results, fake analysis ama placeholder responses.
+
+5. NOTE LIVE AUDIT
+
+Hubi:
+
+- Falanqaynta qoraalka inta la qorayo.
+- In sadar kasta si gaar ah loo falanqeeyo.
+- In cursor/current-line tracking sax yahay.
+- In isbeddelka qoraalku dib u kiciyo falanqaynta.
+- In beddelka analysis modes uu natiijada si sax ah u cusboonaysiiyo.
+- In autosave aanu lumin qoraalka.
+- In khalad API uusan burburin editor-ka.
+
+6. DATABASE & STORAGE AUDIT
+
+Baar:
+
+- Database connection.
+- Models iyo schemas.
+- Migrations iyo migration history.
+- Source registry, research claims iyo rule registry.
+- Kaydinta maansada iyo natiijooyinka.
+- Data integrity iyo duplicate records.
+- Backup/restore haddii uu jiro.
+
+Ha tirtirin xog ama migration hore.
+
+7. INTEGRATION AUDIT
+
+Xaqiiji isku-xirka dhabta ah ee:
+
+Frontend → Backend API → Meter Engine → Rule Registry / Evidence → Analysis Result → Frontend.
+
+Tijaabi dhammaan socodka adigoo gelinaya maansooyin tijaabo ah, kadibna hubi in natiijooyinka Engine-ka ay frontend-ka ka muuqdaan.
+
+8. AUTOMATED TESTING
+
+Samee oo orod:
+
+- Unit tests.
+- Integration tests.
+- API tests.
+- Frontend tests.
+- Meter calculation tests.
+- Regression tests.
+- Security checks.
+- Build tests.
+
+Isticmaal tusaalooyinka iyo natiijooyinka laga bixiyey xeerarka la xaqiijiyey.
+
+Ha beddelin expected results si aad tijaabo uga dhigto PASS. Haddii test-ku fashilmo, baar sababta oo sax implementation-ka adigoon xeerarka beddelin.
+
+9. ANDROID / APK READINESS
+
+Hubi:
+
+- Capacitor configuration.
+- Android project structure.
+- App ID iyo app version.
+- Icons iyo splash screen.
+- Permissions.
+- Internet/API connectivity.
+- Offline behavior haddii la taageerayo.
+- Build configuration.
+- GitHub Actions workflow.
+- APK artifact generation.
+- Release readiness.
+
+Ha sheegan in APK diyaar yahay ilaa build dhab ah la sameeyo oo la xaqiijiyo.
+
+10. SECURITY & PERFORMANCE
+
+Baar:
+
+- API security.
+- Input sanitization.
+- Xogta user-ka.
+- Secrets iyo environment variables.
+- Dependencies iyo vulnerabilities.
+- Performance marka maansooyin dhaadheer la falanqaynayo.
+- Memory leaks iyo repeated API requests.
+
+Ha daabicin secrets ama xog gaar ah.
+
+11. QAABKA SHAQADA
+
+U shaqee marxalado:
+
+1. Inspect: baar dhammaan files-ka iyo qaab-dhismeedka repository-ga.
+2. Baseline: diiwaangeli xaaladda bilowga iyo tijaabooyinka.
+3. Audit: baar qayb kasta oo nidaamka ah.
+4. Repair: sax khaladaadka adigoon beddelin xeerarka.
+5. Integrate: xaqiiji isku-xirka frontend, API iyo engine.
+6. Test: orod dhammaan tijaabooyinka.
+7. Regression: xaqiiji inaan shaqadii hore lumin.
+8. Final report: soo saar warbixin iyo liiska waxyaabaha hadhay.
+
+Ha samayn rewrite guud. Ilaali files-ka iyo functionality-ga shaqaynaya. Kahor intaadan file beddelin, baar waxa ku jira oo samee isbarbardhig.
+
+12. SHURUUDAHA DHAMMAADKA
+
+Nidaamka ha ku dhawaaqin COMPLETE ilaa:
+
+- Xeerarka iyo xisaabintu 100% la ilaaliyey.
+- Frontend-ku si sax ah u shaqaynayo.
+- Backend API-gu shaqaynayo.
+- Meter Engine-ku xisaabin dhab ah samaynayo.
+- Database-ku sax yahay.
+- Note Live si dhab ah u falanqaynayo.
+- Automated tests iyo integration tests gudbeen.
+- Android build la xaqiijiyey haddii APK la dalbaday.
+
+Haddii wax aan la tijaabin, si cad u sheeg NOT TESTED.
+Haddii wax fashilmaan, si cad u sheeg FAILED.
+Haddii qayb maqan tahay, si cad u sheeg NOT IMPLEMENTED.
+
+13. FINAL REPORT
+
+Soo saar warbixin leh:
+
+1. Completed and verified.
+2. Completed but not fully verified.
+3. Failed tests and their causes.
+4. Missing functionality.
+5. Files created, updated and unchanged.
+6. Rule and calculation integrity report.
+7. API integration report.
+8. Meter Engine accuracy and test report.
+9. Android/APK readiness.
+10. Remaining tasks and exact next steps.
+
+FINAL NON-NEGOTIABLE COMMAND:
+
+Preserve the supplied Gaarriye meter rules and calculation methodology exactly as provided. Improve and repair the software around those rules, never the rules themselves. Never fabricate successful tests or claim completion without evidence.

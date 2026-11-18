@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "rule_class": "COMPATIBLE_RESEARCH_ONLY",
+  "note": "Kuwani waa tixraacyo cilmiyeed oo la jaanqaadaya aŭ sii baaraya qaabka Gaarriye. Ma aha xeerar Gaarriye, mana beddelaan asalka.",
+  "sources": [
+    {
+      "id": "R-ORWIN-2001",
+      "author": "Martin Orwin",
+      "title": "On Consonants in Somali Metrics",
+      "year": 2001,
+      "publication": "Afrikanistische Arbeitspapiere 65, pp.103-127",
+      "relationship": "Cilmi-baadhistu waxay ka shidaal qaadataa maqaal Gaarriye, waxayna si qoto dheer u baartaa boosaska shibbanayaasha ee miisaanka, gaar ahaan Jiifto.",
+      "compatibility": "SUPPORTS_AND_EXTENDS_GAARRIYE_TOPIC",
+      "allowed_use": "Fasiraad iyo dib-u-eegis ku saabsan boosaska shibbanayaasha; lama beddeli karo xeerarka Gaarriye asalkooda.",
+      "engine_status": "NOT_EXECUTABLE_UNTIL_FULL_TEXT_AND_POSITION_TABLES_ARE_REVIEWED",
+      "source_url": "https://arcadia.sba.uniroma3.it/handle/2307/4697",
+      "evidence_note": "Afrah (2013), pp.155-158, wuxuu sheegayaa in Orwin (2001) dib u baaray fikradihii Gaarriye ee boosaska miisaanka Jiiftada, isagoo sii faahfaahiyey kaalinta shibbanayaasha dhammaadka alanka."
+    },
+    {
+      "id": "R-AFRAX-2013",
+      "author": "Mohamed Dahir Yusuf Afrah",
+      "title": "Between Continuity and Innovation: Transitional Nature of Post-independence Somali Poetry and Drama 1960s – the Present",
+      "year": 2013,
+      "publication": "PhD thesis, SOAS University of London, Chapter 4.2, pp.154-158",
+      "relationship": "Afrah wuxuu diiwaangeliyey in Gaarriye (1976) soo bandhigay xeerarka aasaasiga ah ee Gabay, Jiifto, Baar-cadde iyo Heesta Kabadaha; wuxuu sheegay in Orwin (2001) si qoto dheer u baaray boosaska shibbanayaasha ee Jiifto. Waxa kale oo uu caddeeyey in cilmi-baadhistu horumar samaysay balse faahfaahinta qaar weli u baahan tahay daraasad.",
+      "compatibility": "SCHOLARLY_SYNTHESIS_ALIGNED_WITH_GAARRIYE_FOUNDATION",
+      "allowed_use": "Xaqiijinta taariikhda cilmi-baadhista iyo in la kala saaro waxyaabaha la isku raacsan yahay iyo faahfaahinta weli furan; ma aha xeer cusub oo engine lagu daro.",
+      "engine_status": "REFERENCE_ONLY",
+      "source_url": "https://eprints.soas.ac.uk/18432/1/Afrah_3592.pdf",
+      "verified_excerpt_locations": "PDF lines 5507-5614; printed thesis pp.155-158"
+    }
+  ]
+}

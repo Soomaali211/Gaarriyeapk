@@ -1,0 +1,12 @@
+{
+  "name": "gaarriye-metre-analyzer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m venv venv && ./venv/bin/pip install -r backend/requirements.txt && cd backend && PYTHONPATH=. ../venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload",
+    "start": "cd backend && PYTHONPATH=. ../venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 3000",
+    "build": "echo 'Build complete'",
+    "lint": "PYTHONPATH=backend ./venv/bin/pytest backend/tests"
+  },
+  "dependencies": {}
+}

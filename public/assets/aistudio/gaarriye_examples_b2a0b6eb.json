@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0.0",
+  "note": "Tusaalooyinkan waxaa laga soo qaatay tusaalooyinka loo nisbeeyey Gaarriye ee Mahadho/jaantusyada. Expected profile ma aha xukun ku saabsan tayada suugaanta.",
+  "examples": [
+    {
+      "id": "EX-JIIFTO-01",
+      "text": "Waagaan ku heli jiray",
+      "expected_profile": "JIIFTO",
+      "expected_units": 9,
+      "source": "G-MAHADHO",
+      "page": "83",
+      "status": "SOURCE_REPORTED_EXAMPLE",
+      "notes": "Tusaale Gaarriye; scansion sequence faahfaahsan lama soo guurin halkan."
+    },
+    {
+      "id": "EX-JIIFTO-02",
+      "text": "Garta waa la qaataa",
+      "expected_profile": "JIIFTO",
+      "expected_units": 9,
+      "source": "G-MAHADHO",
+      "page": "81"
+    },
+    {
+      "id": "EX-JIIFTO-03",
+      "text": "Waan kugu sahwiyayaa",
+      "expected_profile": "JIIFTO",
+      "expected_units": 9,
+      "source": "G-MAHADHO",
+      "page": "81"
+    },
+    {
+      "id": "EX-JIIFTO-04",
+      "text": "Hadal lama oggola oo",
+      "expected_profile": "JIIFTO",
+      "expected_units": 9,
+      "source": "G-MAHADHO",
+      "page": "81; 114"
+    },
+    {
+      "id": "EX-JIIFTO-05",
+      "text": "Khamri yaanu idin hodin",
+      "expected_profile": "JIIFTO",
+      "expected_units": 9,
+      "source": "G-MAHADHO",
+      "page": "81"
+    },
+    {
+      "id": "EX-JIIFTO-06",
+      "text": "Cabdi ma laha saaxiib",
+      "expected_profile": "JIIFTO",
+      "expected_units": 9,
+      "source": "G-MAHADHO",
+      "page": "114"
+    },
+    {
+      "id": "EX-JIIFTO-T-01",
+      "text": "Dadkaygow aqoon baa",
+      "expected_profile": "JIIFTO_T",
+      "expected_units": 10,
+      "source": "G-MAHADHO",
+      "page": "82",
+      "notes": "Tusaale lagu tilmaamay shaqalka dheeraadka ah ee xubinta hore."
+    },
+    {
+      "id": "EX-CAWSK-01",
+      "text": "Cawskanow sabool diidow",
+      "expected_profile": "HEESTA_CAWSKA",
+      "expected_units": 11,
+      "source": "G-MAHADHO",
+      "page": "54"
+    },
+    {
+      "id": "EX-CAWSK-02",
+      "text": "Yaan suuqa lagu dhiginoo",
+      "expected_profile": "HEESTA_CAWSKA",
+      "expected_units": 11,
+      "source": "G-MAHADHO",
+      "page": "54"
+    },
+    {
+      "id": "EX-CAWSK-03",
+      "text": "Soddon lagugu baayicinoo",
+      "expected_profile": "HEESTA_CAWSKA",
+      "expected_units": 11,
+      "source": "G-MAHADHO",
+      "page": "54"
+    },
+    {
+      "id": "EX-HAAN-01",
+      "text": "Naa hooy dayooy hee dheh",
+      "expected_profile": "HAAN",
+      "expected_units": 10,
+      "source": "G-MAHADHO",
+      "page": "53"
+    },
+    {
+      "id": "EX-HAAN-02",
+      "text": "Waa lay dilaalaaye",
+      "expected_profile": "HAAN",
+      "expected_units": 10,
+      "source": "G-MAHADHO",
+      "page": "53"
+    },
+    {
+      "id": "EX-MULLAAX-01",
+      "text": "Naa laago laago",
+      "expected_profile": "MULLAAX",
+      "expected_units": 8,
+      "source": "G-MAHADHO",
+      "page": "55"
+    },
+    {
+      "id": "EX-MAQAL-01",
+      "text": "Maqaleey warlaay",
+      "expected_profile": "MAQAL",
+      "expected_units": 7,
+      "source": "G-MAHADHO",
+      "page": "56"
+    },
+    {
+      "id": "EX-GABAY-01",
+      "text": "Xayawaanka oo idil naftuu kala xayaadaaye",
+      "expected_profile": "GABAY_B",
+      "expected_units": 20,
+      "source": "G-MAHADHO",
+      "page": "59",
+      "parts": {
+        "J": 12,
+        "X": 8
+      }
+    },
+    {
+      "id": "EX-KABDAHA-01",
+      "text": "Geedba geedka u dheer",
+      "expected_profile": "HEESTA_KABDAHA_MEMBER_1",
+      "source": "G-MAHADHO",
+      "page": "66",
+      "notes": "Tusaale ka mid ah xubinta 1aad; ha loo adeegsan inuu keligiis caddeeyo dhammaan saddexda xubnood."
+    },
+    {
+      "id": "EX-XERTA-01",
+      "text": "Wadaaddadu beerka xaydha leh wey cunaanee",
+      "expected_profile": "MAANSADA_XERTA",
+      "source": "G-MAHADHO",
+      "page": "67"
+    },
+    {
+      "id": "EX-CARRUURTA-01",
+      "text": "Maroodi maroodi",
+      "expected_profile": "HEESTA_CARRUURTA_EXAMPLE",
+      "source": "G-MAHADHO",
+      "page": "69",
+      "notation": "(1) 2 1 1 2 (1)"
+    },
+    {
+      "id": "EX-HERIMAAHEE-01",
+      "text": "Waxan dusheennu waa roob",
+      "expected_profile": "HERIMAAHEE_HANNA_HAYBSAN",
+      "source": "G-MAHADHO",
+      "page": "70",
+      "notation": "1 1 1 2 (1) 2 2"
+    },
+    {
+      "id": "EX-GEERAAR-01",
+      "text": "Saaxirkii kala guurraye",
+      "expected_profile": "GEERAAR_EXAMPLE",
+      "source": "G-MAHADHO",
+      "page": "62",
+      "notes": "Jaantuska wuxuu calaamadeeyaa xundhurta; 2112 waa qaybta dhexe ee joogtada ah."
+    }
+  ]
+}

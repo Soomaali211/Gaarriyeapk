@@ -1,0 +1,481 @@
+{
+  "schema_version": "1.0.0",
+  "package": "Gaarriye Miisaanka – Xeerarka Gaarriye oo keliya",
+  "rule_class": "GAARRIYE_PRIMARY",
+  "rules": [
+    {
+      "id": "G-MET-001",
+      "name": "Tirinta shaqallada",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_TEXT",
+      "executable": true,
+      "rule": "Shaqalka gaaban waxaa loo tiriyaa 1; shaqalka dheer waxaa loo tiriyaa 2. Xisaabinta miisaanka ee qaabkan waxay ku salaysan tahay tirinta shaqallada.",
+      "scope": "Aasaaska tirinta; waxaa lala adeegsadaa qaab-dhismeedka nooc kasta.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "47-48"
+        },
+        {
+          "source": "G-1976-JAN",
+          "issue_dates": "17 January 1976",
+          "note": "Maqaalka Miisaanka Maansada; facsimile-ga Jannaayo."
+        }
+      ],
+      "limits": [
+        "Ha u qaadan in tirinta shaqalladu keliya ku filan tahay; habdhaca iyo boosaska shibbanayaashu sidoo kale way muhiim noqon karaan."
+      ]
+    },
+    {
+      "id": "G-MET-002",
+      "name": "Xag: 2 ama 11",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM_AND_TEXT",
+      "executable": true,
+      "rule": "Xaggu wuxuu noqon karaa hal shaqal dheer (2) ama laba shaqal oo gaagaaban oo isku xiga (11). Labaduba waxay leeyihiin qiime tiro oo 2 ah, balse qaabkoodu wuu kala duwan yahay.",
+      "scope": "Qaababka Jiifto iyo jaantusyada xagagga lagu muujiyey.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "47-50"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "1-2"
+        }
+      ],
+      "limits": [
+        "Ha isku darin qaabka 2 iyo 11 marka la hubinayo habdhaca; isu-geyntooda tiro ahaan oo keliya waa isku mid."
+      ]
+    },
+    {
+      "id": "G-MET-003",
+      "name": "Xundhurta",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM_AND_TEXT",
+      "executable": true,
+      "rule": "Xundhurta waa hal shaqal oo gaaban (1) oo meel go'an ku jira, una kala qaybiya qaab-dhismeedka meeriska xubno ama xagag.",
+      "scope": "Jaantusyada Jiifto, Gabay iyo qaababka kale ee xundhurta si cad u muujiya.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "47-50; 58-61; 86-87"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "1-2; 7-8; 17"
+        }
+      ],
+      "limits": [
+        "Booska xundhurta waa in laga akhriyaa jaantuska nooca gaarka ah; looma qaadan karo meel isku mid ah dhammaan noocyada."
+      ]
+    },
+    {
+      "id": "G-JIIFTO-001",
+      "name": "Jiifto B – sagaalleyda",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM",
+      "executable": true,
+      "rule": "Jiifto B waa qaabka sagaalka shaqal ah. Jaantusku wuxuu muujinayaa laba qaybood oo xagag ah oo xundhurta (1) kala dhexeyso. Xag kasta wuxuu qaadan karaa 2 ama 11.",
+      "pattern": {
+        "left_xag_options": [
+          "2",
+          "11"
+        ],
+        "separator": "1",
+        "right_xag_options": [
+          "2",
+          "11"
+        ],
+        "total_units": 9
+      },
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "49-50"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "1"
+        },
+        {
+          "source": "G-1976-JAN",
+          "issue_dates": "17 January 1976"
+        }
+      ],
+      "limits": [
+        "Dhammaan kala-doorashooyinka xagagga waa in la ilaaliyaa; ha ku koobnaan hal tusmo oo keliya."
+      ]
+    },
+    {
+      "id": "G-JIIFTO-002",
+      "name": "Jiifto T – tobanleyda",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM_AND_TEXT",
+      "executable": true,
+      "rule": "Jiifto T waa qaabka toban shaqal ah. Shaqalka dheeraadka ah wuxuu geli karaa xubinta hore oo keliya; ma geli karo xubinta labaad. Xundhurta (1) ayaa weli kala qaybisa qaabka.",
+      "pattern": {
+        "base": "Jiifto B",
+        "extra_unit": 1,
+        "extra_position": "first_member_only",
+        "total_units": 10
+      },
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "49-50"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "2"
+        },
+        {
+          "source": "G-1976-JAN",
+          "issue_dates": "17 January 1976"
+        }
+      ],
+      "limits": [
+        "Ha u oggolaan shaqalka dheeraadka ah inuu u wareego xubinta dambe."
+      ]
+    },
+    {
+      "id": "G-JIIFTO-003",
+      "name": "Xaddidaadda boosaska shibbanayaasha ee Jiifto",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_PRINCIPLE_POSITION_DETAILS_REVIEW",
+      "executable": false,
+      "rule": "Gaarriye wuxuu tilmaamay in shibbanayaasha isxigsada/labanlaabma ay miisaanka Jiiftada saameeyaan marka ay galaan boosas gaar ah; shibbanayaasha looma tiriyo unugyo shaqal ah, balse boosaskoodu waxay qayb ka yihiin hubinta qaabka.",
+      "scope": "Jiifto; ha guudmarin nooc kasta.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "74; 81-82; 113-115"
+        },
+        {
+          "source": "G-1976-JAN",
+          "issue_dates": "January 1976",
+          "note": "Maqaallada Jiifto ee Jannaayo."
+        }
+      ],
+      "limits": [
+        "Liiska boosaska saxda ah ee dhammaan noocyada shibbanayaasha wuxuu u baahan yahay isbarbardhig sawir-bog bog ah; lama hawlgelinayo engine-ka ilaa la xaqiijiyo."
+      ]
+    },
+    {
+      "id": "G-DIPH-001",
+      "name": "Dhafanayaasha ay/aw/ey/ow",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_VARIABLE_RULE",
+      "executable": true,
+      "rule": "Dhafanayaasha ay, aw, ey iyo ow ma laha qiime tiro oo go'an dhammaan xaaladaha; waxaa loo qiimeeyaa 1 ama 2 iyadoo la eegayo dhawaaqa, macnaha iyo sida meerisku u istaago marka la tijaabiyo shaqal gaaban ama dheer.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "78-82"
+        }
+      ],
+      "limits": [
+        "Ha ku darin ew xeerkan ilaa caddayn toos ah oo Gaarriye ah la helo.",
+        "Ha u qoondeyn 1 ama 2 si toos ah qoraal keliya; soo saar labada laan haddii macnaha/dhawaaqu aanu caddayn."
+      ]
+    },
+    {
+      "id": "G-JIIFTO-004",
+      "name": "Jiifto iyo heesaha ka farcama",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM_AND_TEXT",
+      "executable": true,
+      "rule": "Jaantusyada Gaarriye waxay muujinayaan noocyo la xiriira Jiifto: Haan/heesta caanaha = Jiifto oo hal shaqal gaaban (1) gadaal loogu daray; heesta cawska = Jiifto oo shaqal dheer (2) gadaal loogu daray; Mullaax = Jiifto oo hal shaqal laga jaray gadaal; Maqal = Jiifto oo laba shaqal laga jaray gadaal.",
+      "profiles": [
+        {
+          "name": "Haan / heesta caanaha",
+          "operation": "append",
+          "units": 1,
+          "position": "end",
+          "evidence_page": "53"
+        },
+        {
+          "name": "Heesta cawska",
+          "operation": "append",
+          "units": 2,
+          "position": "end",
+          "evidence_page": "54"
+        },
+        {
+          "name": "Mullaax",
+          "operation": "remove",
+          "units": 1,
+          "position": "end",
+          "evidence_page": "55"
+        },
+        {
+          "name": "Maqal",
+          "operation": "remove",
+          "units": 2,
+          "position": "end",
+          "evidence_page": "56"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "53-56"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "3-6"
+        }
+      ],
+      "limits": [
+        "Magacyada iyo jaantusyada ha loo hayo sida Gaarriye u soo bandhigay; ha lagu beddelin magac kale oo cilmi-baare kale adeegsado."
+      ]
+    },
+    {
+      "id": "G-GABAY-001",
+      "name": "Gabay: J iyo X",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM_AND_TEXT",
+      "executable": true,
+      "rule": "Gabayga jaantuskiisa, J waa xubinta hore (hojis) oo leh 12 shaqal nooca B ama 13 nooca T; X waa xubinta dambe oo leh 8 shaqal. Sidaas darteed wadartu waa 20 ama 21 sida jaantuska B/T.",
+      "pattern": {
+        "J": {
+          "B": 12,
+          "T": 13
+        },
+        "X": {
+          "B": 8,
+          "T": 8
+        },
+        "total": {
+          "B": 20,
+          "T": 21
+        }
+      },
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "58-61"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "7-8"
+        },
+        {
+          "source": "G-1976-JAN",
+          "issue_dates": "31 January 1976",
+          "note": "Bogga asalka ah wuxuu sharxayaa Gabayga J/X iyo B/T; ma aha Jiifto B/T."
+        }
+      ],
+      "limits": [
+        "J iyo X waa in la ilaaliyaa sidii laba xubnood oo kala gaar ah; ha ku soo koobin tirada guud oo keliya."
+      ]
+    },
+    {
+      "id": "G-GEERAAR-001",
+      "name": "Geeraar: 2112 dhexda",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM_AND_TEXT",
+      "executable": false,
+      "rule": "Jaantuska Gaarriye wuxuu muujinayaa qaabka 2112 oo ku jira bartamaha Geeraarka, waxaana lagu tilmaamay qayb joogto ah oo Geeraarka u gaar ah.",
+      "pattern": {
+        "central_fixed_sequence": "2112"
+      },
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "62"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "9"
+        },
+        {
+          "source": "G-1976-FEB",
+          "issue_dates": "7 February 1976"
+        }
+      ],
+      "limits": [
+        "2112 keliya kuma filna in sadar si toos ah loogu aqoonsado Geeraar.",
+        "Ha go'aamin sida ereyada isku xira ama shaqallada kale loo tirinayo ilaa qoraalka asalka ah ee dhammeystiran la xaqiijiyo."
+      ]
+    },
+    {
+      "id": "G-BAARCADDE-001",
+      "name": "Baarcadda / Saarka – jaantuska",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_GENRE_DIAGRAM_PATTERN_TRANSCRIPTION_REVIEW",
+      "executable": false,
+      "rule": "Gaarriye wuxuu soo bandhigay jaantus gaar ah oo Baarcadda/Saarka ah, wuxuuna sheegay in qaybta hore ay la mid tahay qaababka Jiifto iyo Gabay. Jaantusku wuxuu taxayaa qaabab tirooyin kala duwan.",
+      "diagram_transcription_candidates": [
+        "21111",
+        "2112",
+        "11112",
+        "1122",
+        "2211",
+        "11211",
+        "111111"
+      ],
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "64"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "10"
+        }
+      ],
+      "limits": [
+        "Liiska tirooyinka waa transkribshan hordhac ah oo u baahan isbarbardhig muuqaal ah; lama adeegsan karo xisaabin otomaatig ah hadda."
+      ]
+    },
+    {
+      "id": "G-KABDAHA-001",
+      "name": "Heesta Kabadaha – saddex xubnood",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_STRUCTURE_PATTERN_REVIEW",
+      "executable": false,
+      "rule": "Heesta Kabadaha waxay leedahay saddex xubnood. Jaantuska Gaarriye wuxuu tilmaamayaa in tusaha/lahaanshaha labaad uu yahay qaabka koowaad oo laba shaqal gadaal laga jaray, halka kan saddexaad uu yahay qaabka koowaad oo saddex shaqal hore loogu daray.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "65-66"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "11"
+        },
+        {
+          "source": "G-1976-MAR",
+          "issue_dates": "27 March 1976"
+        }
+      ],
+      "limits": [
+        "Tirooyinka safafka jaantuska waa in lagu xaqiijiyaa sawirka asalka ah ka hor hirgelinta."
+      ]
+    },
+    {
+      "id": "G-XERTA-001",
+      "name": "Maansada Xerta – saddex xubnood",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_STRUCTURE_PATTERN_REVIEW",
+      "executable": false,
+      "rule": "Jaantuska Maansada Xerta wuxuu muujinayaa saddex xubnood oo muuqda oo ka qayb qaata dhismaha baydka.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "67"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "12"
+        },
+        {
+          "source": "G-1976-APR",
+          "issue_dates": "3 April 1976"
+        }
+      ],
+      "limits": [
+        "Qaabka tirooyinka xubnaha iyo kala xuduudahooda waa in la xaqiijiyaa ka hor hirgelinta."
+      ]
+    },
+    {
+      "id": "G-CARRUURTA-001",
+      "name": "Heesta Carruurta",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_EXAMPLE_CONTEXT_PATTERN_REVIEW",
+      "executable": false,
+      "rule": "Gaarriye wuxuu diiwaangeliyey hees carruurta xoolo-jirku qaaddo, wuxuuna u soo bandhigay gogol-dhig tusaale u ah Dhaanto ama Balwo. Xirmadani waxay u isticmaashaa magaca saxda ah ee mashruuca: Heesta Carruurta.",
+      "diagram_transcription": "1 | 2112 | 1",
+      "example": {
+        "text": "Maroodi maroodi",
+        "notation": "(1) 2 1 1 2 (1)"
+      },
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "69"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "13"
+        },
+        {
+          "source": "G-1976-APR",
+          "issue_dates": "10 April 1976"
+        }
+      ],
+      "limits": [
+        "Tusaalaha gogol-dhigga ah looma qaadan karo xeer guud oo Dhaanto/Balwo ah.",
+        "Ha adeegsan magaca khaldan ee hore; magaca la adeegsanaayo waa Heesta Carruurta."
+      ]
+    },
+    {
+      "id": "G-HERIMAAHEE-001",
+      "name": "Ciyaarta Herimaahee Hanna Haybsan",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_DIAGRAM_PATTERN_REVIEW",
+      "executable": false,
+      "rule": "Gaarriye wuxuu soo bandhigay jaantus uu si cad ugu magacaabay ciyaarta Herimaahee Hanna Haybsan, oo leh tusaale sadar ah.",
+      "example": {
+        "text": "Waxan dusheennu waa roob",
+        "notation": "1 1 1 2 (1) 2 2"
+      },
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "70"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "14"
+        },
+        {
+          "source": "G-1976-APR",
+          "issue_dates": "17 April 1976"
+        }
+      ],
+      "limits": [
+        "Ha ka dhigin meter classifier ilaa qaabka jaantuska si buuxda loo transcribe-gareeyo."
+      ]
+    },
+    {
+      "id": "G-TERMS-001",
+      "name": "Xidhbeeg iyo Xundhurta",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_TERMINOLOGY",
+      "executable": false,
+      "rule": "Jaantuska eray-bixintu wuxuu qeexayaa xidhbeegyada inay yihiin kooxaha shaqallada ee qaab-dhismeedka ku jira, halka xundhurta ay tahay shaqalka keliya ee kala sooca xidhbeegyada.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "86-87"
+        },
+        {
+          "source": "G-DIAGRAMS",
+          "pages": "17"
+        }
+      ],
+      "limits": [
+        "Xirmadani waxay ilaalinaysaa erayga Gaarriye ee xundhurta; kuma beddelayso erey-bixin kale oo qoraa kale soo jeediyey."
+      ]
+    },
+    {
+      "id": "G-ALL-001",
+      "name": "Xisaabtu waxay hubisaa sugnaanta, ma aha quruxda",
+      "class": "GAARRIYE_PRIMARY",
+      "status": "VERIFIED_PRINCIPLE",
+      "executable": true,
+      "rule": "Miisaanku waa halbeeg lagu hubiyo qaab-dhismeedka iyo sugnaanta miisaanka; ma aha cabbir lagu go'aamiyo quruxda, qiimaha ama tayada suugaanta.",
+      "evidence": [
+        {
+          "source": "G-MAHADHO",
+          "pages": "47-48; 77"
+        }
+      ],
+      "limits": [
+        "Natiijada engine-ku ma xukumi karto in maansadu tahay suugaan wanaagsan ama xun."
+      ]
+    }
+  ]
+}
