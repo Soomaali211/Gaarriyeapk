@@ -120,9 +120,15 @@
   }
   async function checkApi(){
     const badge=$("#apiStatus");
-    if(!API_BASE){badge.textContent="API: lama dejin";return}
-    try{const r=await fetch(API_BASE+"/health");if(!r.ok)throw Error();const d=await r.json();badge.textContent=d.status==="ok"?"API: ku xidhan":"API: jawaab aan la filayn";badge.className="pill "+(d.status==="ok"?"green":"")}
-    catch(_){badge.textContent="API: lama heli karo"}
+    try{
+      const r=await fetch((API_BASE||"")+"/health");
+      if(!r.ok)throw Error();
+      const d=await r.json();
+      badge.textContent=d.status==="ok"?"API: ku xidhan":"API: jawaab aan la filayn";
+      badge.className="pill "+(d.status==="ok"?"green":"");
+    }catch(_){
+      badge.textContent="API: lama heli karo";
+    }
   }
   $("#saveBtn").addEventListener("click",()=>{
     persistDraft();
@@ -145,11 +151,6 @@
     const text=poem.value.trim(), modes=selectedModes();
     if(!text){if(!quiet)say("Fadlan marka hore geli maanso.");poem.focus();return}
     if(!Object.values(modes).some(Boolean)){if(!quiet)say("Daar ugu yaraan hal hab oo falanqayn ah.");return}
-    if(!API_BASE){
-      lastAnalysis=null;renderLive();
-      if(!quiet)showResult("Engine-ka falanqaynta lama xidhin","Qoraalka waa la kaydiyey qalabka. API lama dejin, sidaas darteed miisaan rasmi ah lama samayn.","Engine: not connected");
-      return;
-    }
     const btn=$("#analyzeBtn"),genre=$("#genreSelect").value,seq=++requestSequence;
     const analysisModes={gaarriye:modes.gaarriye,researchers:modes.research,compatible_other:modes.compatible};
     btn.disabled=true;btn.textContent="Waa la hubinayaa…";
